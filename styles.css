@@ -1,0 +1,89 @@
+.box {
+    background-color: rgb(39, 37, 37);
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px orange;
+    width: 5rem;
+    height: 5rem;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.x {
+    color: orange;
+}
+
+.o {
+    color: rgb(202, 48, 202);
+}
+
+.box:hover {
+    box-shadow: 0px 0px 15px orange;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    place-items: center;
+    justify-content: center;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    margin: 3rem auto;
+    box-shadow: 0px 0px 8px orange;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.x-score {
+    color: orange;
+    border-bottom: 5px solid orange;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.o-score {
+    color: rgb(202, 48, 202);
+    border-bottom: 5px solid rgb(202, 48, 202);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.inactive {
+    border-bottom: 5px solid transparent;
+}
+
+.reset-btn {
+    display: block;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(39, 37, 37);
+    border-radius: 0.5rem;
+    color: wheat;
+    padding: 0.5rem 1rem;
+}
+
+.title {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}
